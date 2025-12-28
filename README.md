@@ -1,8 +1,8 @@
 <div align="center">
 
-# Patrones de diseño (TypeScript)
+# Patrones de diseño (TypeScript + Python)
 
-Colección de ejemplos **claros y pequeños** de patrones de diseño implementados en **TypeScript**, pensados para leerse rápido y servir como referencia.
+Colección de ejemplos **claros y pequeños** de patrones de diseño implementados en **TypeScript** y en **Python**, pensados para leerse rápido y servir como referencia.
 
 [Ver contenido](#contenido) · [Ejecución](#ejecución) · [Estructura](#estructura) · [Roadmap](#roadmap)
 
@@ -15,6 +15,7 @@ Colección de ejemplos **claros y pequeños** de patrones de diseño implementad
 - Reunir implementaciones de patrones de diseño con enfoque didáctico.
 - Mantener ejemplos **autocontenidos** (fáciles de copiar/ejecutar).
 - Mostrar, cuando aporte valor, **más de un estilo** (p. ej. OOP vs funcional) para el mismo patrón.
+- Permitir ejemplos en **más de un lenguaje** cuando sea útil para comparar enfoques.
 
 ## Contenido
 
@@ -25,6 +26,7 @@ Colección de ejemplos **claros y pequeños** de patrones de diseño implementad
   - Ejemplos:
     - [Factory Method con clases](Factory%20Method/index.ts) (Creator abstracto + productos concretos)
     - [Factory Method estilo funcional](Factory%20Method/function.ts) (factory method pasado como parámetro)
+    - [Factory Method en Python](Factory%20Method/main.py) (Creator abstracto + productos concretos)
 
 ## Estructura
 
@@ -33,12 +35,29 @@ patrones de diseño/
 ├─ Factory Method/
 │  ├─ index.ts
 │  └─ function.ts
+│  └─ main.py
 └─ README.md
 ```
 
 ## Ejecución
 
-Estos ejemplos son TypeScript “a pelo” (sin framework). Tienes varias opciones según cómo tengas configurado tu entorno.
+Hay ejemplos en TypeScript y Python. Tienes varias opciones según cómo tengas configurado tu entorno.
+
+### Python
+
+Desde la carpeta del patrón:
+
+```bash
+python .\main.py
+```
+
+O desde la raíz del repositorio:
+
+```bash
+python "Factory Method/main.py"
+```
+
+### TypeScript
 
 ### Opción A — Ejecutar con ts-node (rápido)
 
